@@ -1,5 +1,5 @@
-
 let favourite_time = "6:10 PM";
+
 setTimeout(function(){ 
 	$(".pb-15.text-center").each(function(){
 		let time = $(this).text().trim();
@@ -10,7 +10,9 @@ setTimeout(function(){
 
 		}
 	});
+	location.reload();
 }, 3000);
+
 function SaveTextAsFile(text)
 {
     var textFileAsBlob = new Blob([text], {type:'text/plain'});
