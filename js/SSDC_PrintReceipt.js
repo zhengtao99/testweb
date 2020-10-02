@@ -1,14 +1,13 @@
 /* https://www.ssdcl.com.sg/User/Payment/PrintReceipt */
-
+var text = "SSDC_";
+var venue = $("tr").last().prev().prev().children().first().text().trim(" ").split("\n")[2].replace("Location:","").trim();
+text += venue;
+$("tr").last().prev().children().each(function(){
+	text += "_" + $(this).text();
+});
+SaveTextAsFile(text);
 setTimeout(function(){ 
-	var text = "SSDC_";
-	var venue = $("tr").last().prev().prev().children().first().text().trim(" ").split("\n")[2].replace("Location:","").trim();
-	text += venue;
-	$("tr").last().prev().children().each(function(){
-		text += "_" + $(this).text();
-	});
-	
-	SaveTextAsFile(text);
+	location.href = "https://www.ssdcl.com.sg/User/Booking/AddBooking?bookingType=PL";
 }, 5000);
 
 function SaveTextAsFile(text)
