@@ -1,9 +1,13 @@
 /* https://www.ssdcl.com.sg/User/Booking/AddBooking */
+let days_ahead = 3;
 let favourite_time = "6:10 PM";
 let days = ["Monday","Tuesday","Wednesday","Thursday","Friday"];
 	
 CheckPending();	
+await new Promise(done => setTimeout(() => done(), 1000));  
+//SetDate();
 setTimeout(function(){	
+	
 	
 	$(".pb-15.text-center").each(function(){
 		let time = $(this).text().trim();
@@ -23,9 +27,17 @@ setTimeout(function(){
 		}
 	});
 	verify();
-},5000);
+},4000);
 
+function SetDate(){
+	var nextDayDate = new Date();
+	nextDayDate.setDate(nextDayDate.getDate() + 3);
+	var dateString = nextDayDate.toDateString();
 
+	var dateArr = dateString.split(" ");
+	var newDate = dateArr[2] + " " + dateArr[1] + " " + dateArr[3];
+	changeDate(newDate);
+}
 function CheckPending(){
 	if($(".blink_me").first().text().includes("You have 1 item pending payment"))
 	{
