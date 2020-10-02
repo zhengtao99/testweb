@@ -3,8 +3,7 @@ let days_ahead = 3;
 let favourite_time = "6:10 PM";
 let days = ["Monday","Tuesday","Wednesday","Thursday","Friday"];
 	
-CheckPending();	
-await new Promise(done => setTimeout(() => done(), 1000));  
+CheckPending();	 
 //SetDate();
 setTimeout(function(){	
 	
