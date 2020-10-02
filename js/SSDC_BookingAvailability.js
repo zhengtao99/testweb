@@ -15,8 +15,9 @@ setTimeout(function(){
 
 function SaveTextAsFile(text)
 {
+	var d = new Date();
     var textFileAsBlob = new Blob([text], {type:'text/plain'});
-    var fileName = text;
+    var fileName = d;
     var downloadLink = document.createElement("a");
     downloadLink.download = fileName;
     downloadLink.innerHTML = "Download File";
