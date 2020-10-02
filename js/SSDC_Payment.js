@@ -2,5 +2,5 @@
 
 setTimeout(function(){ 
 	location.href = "/User/Payment/ConfirmPurchase";
-}, 1000);
+}, 5000);
 

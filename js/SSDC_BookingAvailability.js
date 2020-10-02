@@ -2,8 +2,9 @@
 let favourite_time = "6:10 PM";
 let days = ["Monday","Tuesday","Wednesday","Thursday","Friday"];
 	
+CheckPending();	
 setTimeout(function(){	
-	CheckPending();
+	
 	$(".pb-15.text-center").each(function(){
 		let time = $(this).text().trim();
 

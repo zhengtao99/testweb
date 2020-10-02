@@ -9,7 +9,7 @@ setTimeout(function(){
 	});
 	
 	SaveTextAsFile(text);
-}, 1000);
+}, 5000);
 
 function SaveTextAsFile(text)
 {

@@ -2,5 +2,5 @@
 
 setTimeout(function(){ 
 	$("#makePayment").click();
-}, 1000);
+}, 5000);
 
