@@ -1,13 +1,11 @@
 /* https://www.ssdcl.com.sg/User/Booking/AddBooking */
 let days_ahead = 3;
 let favourite_time = "6:10 PM";
-let days = ["Monday","Tuesday","Wednesday","Thursday","Friday"];
-	
+//let days = ["Monday","Tuesday","Wednesday","Thursday","Friday"];
+let days = ["Friday"];
 CheckPending();	 
 //SetDate();
-setTimeout(function(){	
-	
-	
+setTimeout(function(){
 	$(".pb-15.text-center").each(function(){
 		let time = $(this).text().trim();
 
@@ -30,7 +28,7 @@ setTimeout(function(){
 
 function SetDate(){
 	var nextDayDate = new Date();
-	nextDayDate.setDate(nextDayDate.getDate() + 3);
+	nextDayDate.setDate(nextDayDate.getDate() + days_ahead);
 	var dateString = nextDayDate.toDateString();
 
 	var dateArr = dateString.split(" ");
