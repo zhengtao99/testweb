@@ -9,12 +9,13 @@ CheckPending();
 setTimeout(function(){
 	$(".pb-15.text-center").each(function(){
 		var rand = Math.random();
+		var thisTime = $(this);
 		setTimeout(function(){
-			let time = $(this).text().trim();
+			let time = thisTime.text().trim();
 			if(time.includes(favourite_time))
 			{
-				let link  = $(this).children().first();
-				let bookingDate = $(this).parent().children().first().text().split("\n")[2].trim();	
+				let link  = thisTime.children().first();
+				let bookingDate = thisTime.parent().children().first().text().split("\n")[2].trim();	
 				for (var i = 0; i < days.length; i++) {
 					console.log(bookingDate);
 					console.log(days[i]);
