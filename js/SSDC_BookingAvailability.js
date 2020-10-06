@@ -8,21 +8,23 @@ CheckPending();
 //SetDate();
 setTimeout(function(){
 	$(".pb-15.text-center").each(function(){
-		let time = $(this).text().trim();
-
-		if(time.includes(favourite_time))
-		{
-			let link  = $(this).children().first();
-			let bookingDate = $(this).parent().children().first().text().split("\n")[2].trim();	
-			for (var i = 0; i < days.length; i++) {
-				console.log(bookingDate);
-				console.log(days[i]);
-				if(bookingDate.includes(days[i]))
-				{
-					link.click();
+		var rand = Math.random();
+		setTimeout(function(){
+			let time = $(this).text().trim();
+			if(time.includes(favourite_time))
+			{
+				let link  = $(this).children().first();
+				let bookingDate = $(this).parent().children().first().text().split("\n")[2].trim();	
+				for (var i = 0; i < days.length; i++) {
+					console.log(bookingDate);
+					console.log(days[i]);
+					if(bookingDate.includes(days[i]))
+					{
+						link.click();
+					}
 				}
 			}
-		}
+		}, 1000*rand);
 	});
 	SetDate();
 },3000);

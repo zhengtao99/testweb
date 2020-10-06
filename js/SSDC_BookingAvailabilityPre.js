@@ -1,6 +1,6 @@
 /* https://www.ssdcl.com.sg/User/Booking/AddBooking?bookingType=PL */
 let days_ahead = 3;
-let weeks_ahead = 9;
+let weeks_ahead = 8;
 
 setTimeout(function(){	
 	SetDate();
