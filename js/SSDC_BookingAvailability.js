@@ -25,7 +25,7 @@ setTimeout(function(){
 		}
 	});
 	SetDate();
-},4000);
+},3000);
 
 
 function SetDate(){
