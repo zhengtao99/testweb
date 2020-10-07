@@ -1,5 +1,5 @@
 /* https://www.ssdcl.com.sg/User/Booking/AddBooking?bookingType=PL */
-let days_ahead = 3;
+let days_ahead = 1;
 let weeks_ahead = 8;
 
 setTimeout(function(){	
