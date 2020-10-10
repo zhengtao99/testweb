@@ -21,10 +21,11 @@ setTimeout(function(){
 					console.log(bookingDate);
 					var rand = Math.random();
 					rand += 3;
-					console.log(rand*1000);
-					//setTimeout(function(){				
+					rand = parseInt(rand);
+					console.log(rand);
+					setTimeout(function(){				
 						link.click();
-					//}, 1000*rand);
+					}, rand);
 				}
 			}
 		}	
