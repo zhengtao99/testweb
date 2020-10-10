@@ -22,9 +22,9 @@ setTimeout(function(){
 					var rand = Math.random();
 					rand += 3;
 					console.log(rand);
-					setTimeout(function(){				
+					//setTimeout(function(){				
 						link.click();
-					}, 1000*rand);
+					//}, 1000*rand);
 				}
 			}
 		}	
