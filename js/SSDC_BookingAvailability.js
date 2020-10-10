@@ -22,7 +22,7 @@ setTimeout(function(){
 					var rand = Math.random();
 					rand += 3;
 					rand = parseInt(rand);
-					console.log(rand);
+					console.log(rand * 1000);
 					setTimeout(function(){				
 						link.click();
 					}, rand);
