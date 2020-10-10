@@ -9,7 +9,7 @@ CheckPending();
 setTimeout(function(){
 	$(".pb-15.text-center").each(function(){
 		var rand = Math.random();
-		rand += 0.5;
+		rand += 3;
 		var thisTime = $(this);
 		setTimeout(function(){
 			let time = thisTime.text().trim();
@@ -29,7 +29,7 @@ setTimeout(function(){
 		}, 1000*rand);
 	});
 	SetDate();
-},3000);
+},5000);
 
 
 function SetDate(){
