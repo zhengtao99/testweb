@@ -21,7 +21,7 @@ setTimeout(function(){
 					console.log(bookingDate);
 					var rand = Math.random();
 					rand += 3;
-					console.log(rand);
+					console.log(rand*1000);
 					//setTimeout(function(){				
 						link.click();
 					//}, 1000*rand);
