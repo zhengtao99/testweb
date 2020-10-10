@@ -9,6 +9,7 @@ CheckPending();
 setTimeout(function(){
 	$(".pb-15.text-center").each(function(){
 		var rand = Math.random();
+		rand += 0.5;
 		var thisTime = $(this);
 		setTimeout(function(){
 			let time = thisTime.text().trim();
