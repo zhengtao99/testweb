@@ -1,6 +1,6 @@
 /* https://www.ssdcl.com.sg/User/Booking/AddBooking */
 let days_ahead = 1;
-let weeks_ahead = 8;
+let weeks_ahead = 6;
 let favourite_time = "6:10 PM";
 //let days = ["Monday","Tuesday","Wednesday","Thursday","Friday"];
 let days = ["Monday","Wednesday","Friday"];
@@ -13,15 +13,15 @@ setTimeout(function(){
 		let time = thisTime.text().trim();
 		if(time.includes(favourite_time))
 		{
-			let link  = thisTime.children().first();
-			let bookingDate = thisTime.parent().children().first().text().split("\n")[2].trim();	
 			for (var i = 0; i < days.length; i++) {
-				console.log(bookingDate);
-				console.log(days[i]);
 				if(bookingDate.includes(days[i]))
 				{
+					let link  = thisTime.children().first();
+					let bookingDate = thisTime.parent().children().first().text().split("\n")[2].trim();	
+					console.log(bookingDate);
 					var rand = Math.random();
 					rand += 3;
+					console.log(rand);
 					setTimeout(function(){				
 						link.click();
 					}, 1000*rand);
