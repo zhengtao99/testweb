@@ -23,9 +23,10 @@ setTimeout(function(){
 					rand += 3;
 					rand = parseInt(rand * 1000);
 					console.log(rand);
-					setTimeout(function(){				
+					//setTimeout(function(){				
 						link.click();
-					}, rand);
+						link.click();
+					//}, rand);
 				}
 			}
 		}	
