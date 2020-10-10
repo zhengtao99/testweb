@@ -8,29 +8,32 @@ CheckPending();
 //SetDate();
 setTimeout(function(){
 	$(".pb-15.text-center").each(function(){
-		var rand = Math.random();
-		rand += 3;
-		var thisTime = $(this);
-		setTimeout(function(){
-			let time = thisTime.text().trim();
-			if(time.includes(favourite_time))
-			{
-				let link  = thisTime.children().first();
-				let bookingDate = thisTime.parent().children().first().text().split("\n")[2].trim();	
-				for (var i = 0; i < days.length; i++) {
-					console.log(bookingDate);
-					console.log(days[i]);
-					if(bookingDate.includes(days[i]))
-					{
+	
+		var thisTime = $(this);		
+		let time = thisTime.text().trim();
+		if(time.includes(favourite_time))
+		{
+			let link  = thisTime.children().first();
+			let bookingDate = thisTime.parent().children().first().text().split("\n")[2].trim();	
+			for (var i = 0; i < days.length; i++) {
+				console.log(bookingDate);
+				console.log(days[i]);
+				if(bookingDate.includes(days[i]))
+				{
+					var rand = Math.random();
+					rand += 3;
+					setTimeout(function(){				
 						link.click();
-					}
+					}, 1000*rand);
 				}
 			}
-		}, 1000*rand);
+		}	
 	});
+},1000);
+
+setTimeout(function(){
 	SetDate();
 },5000);
-
 
 function SetDate(){
 	var nextDayDate = new Date();
