@@ -34,7 +34,7 @@ setTimeout(function(){
 
 setTimeout(function(){
 	SetDate();
-},5000);
+},2000);
 
 function SetDate(){
 	var nextDayDate = new Date();
