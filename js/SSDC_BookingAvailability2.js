@@ -1,9 +1,9 @@
 /* https://www.ssdcl.com.sg/User/Booking/AddBooking */
-let days_ahead = 1;
+let days_ahead = 3;
 let weeks_ahead = 0;
-let favourite_time = "6:15 PM";
+let favourite_time = "n/a";
 
-let days = ["Monday","Wednesday","Friday"];
+let days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 CheckPending();	 
 //SetDate();
 setTimeout(function(){
@@ -11,8 +11,9 @@ setTimeout(function(){
 	
 		var thisTime = $(this);		
 		let time = thisTime.text().trim();
-		if(time.includes(favourite_time))
+		if(!time.includes(favourite_time))
 		{
+			console.log("false");
 			for (var i = 0; i < days.length; i++) {
 				let bookingDate = thisTime.parent().children().first().text().split("\n")[2].trim();	
 				if(bookingDate.includes(days[i]))
