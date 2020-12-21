@@ -11,6 +11,7 @@ setTimeout(function(){
 	
 		var thisTime = $(this);		
 		let time = thisTime.text().trim();
+		console.log(time);
 		if(time.includes(favourite_time))
 		{
 			for (var i = 0; i < days.length; i++) {
