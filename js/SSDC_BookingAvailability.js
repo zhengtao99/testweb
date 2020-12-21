@@ -1,9 +1,9 @@
 /* https://www.ssdcl.com.sg/User/Booking/AddBooking */
 let days_ahead = 0;
-let weeks_ahead = 1;
+let weeks_ahead = 0;
 let favourite_time = "6:10 PM";
 
-let days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+let days = ["Tuesday"];
 CheckPending();	 
 //SetDate();
 setTimeout(function(){
