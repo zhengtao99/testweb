@@ -7,7 +7,7 @@ $("tr").last().prev().children().each(function(){
 });
 SaveTextAsFile(text);
 setTimeout(function(){ 
-	location.href = "https://www.ssdcl.com.sg/User/Booking/AddBooking?bookingType=PL";
+	//location.href = "https://www.ssdcl.com.sg/User/Booking/AddBooking?bookingType=PL";
 }, 5000);
 
 function SaveTextAsFile(text)

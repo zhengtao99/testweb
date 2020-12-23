@@ -1,7 +1,7 @@
 /* https://www.ssdcl.com.sg/User/Booking/AddBooking */
 let days_ahead = 1;
 let weeks_ahead = 0;
-let days_per_week = 6;
+let days_per_week = 2;
 let favourite_time = "n/a";
 
 let days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
