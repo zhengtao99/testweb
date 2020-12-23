@@ -1,6 +1,7 @@
 /* https://www.ssdcl.com.sg/User/Booking/AddBooking */
 let days_ahead = 1;
 let weeks_ahead = 0;
+let days_per_week = 6;
 let favourite_time = "n/a";
 
 let days = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
@@ -59,7 +60,7 @@ function GetWeek(){
 		week = 0;
 	}
 	sessionStorage.setItem("weeks_ahead", week);
-	return week * 7;
+	return week * days_per_week;
 }
 
 function CheckPending(){
