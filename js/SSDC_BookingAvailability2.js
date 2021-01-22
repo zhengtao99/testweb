@@ -1,5 +1,5 @@
 /* https://www.ssdcl.com.sg/User/Booking/AddBooking */
-let days_ahead = -2;
+let days_ahead = -5;
 let weeks_ahead = 0;
 let days_per_week = 7;
 let favourite_time = "n/a";
