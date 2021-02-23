@@ -3,7 +3,7 @@ let days_ahead = 0;
 let weeks_ahead = 0;
 let favourite_time = "6:10 PM";
 
-let days = ["Thursday"];
+let days = ["Thursday","Friday"];
 CheckPending();	 
 //SetDate();
 setTimeout(function(){
